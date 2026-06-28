@@ -1,0 +1,18 @@
+package in.sp.ps;
+
+import java.util.Scanner;
+
+public class Power {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter the base number");
+        int base = obj.nextInt();
+        System.out.println("Enter the power number");
+        int power = obj.nextInt();
+        int result = 1;
+        for (int i = 1;i<=power;i++){
+            result = result*base;
+        }
+        System.out.println(result);
+    }
+}
