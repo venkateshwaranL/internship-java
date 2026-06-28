@@ -7,15 +7,19 @@ public class CaseToCase {
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter the Character");
         char value = obj.next().charAt(0);
-        int newValue =0;
+//        int newValue =0;
         if ('A' <= value && 'Z' >= value){
-            newValue = value+32;
+//           newValue = value+32;
+             value+=32;
         } else if ('a' <= value && 'z' >= value) {
-           newValue = value-32;
+//           newValue = value-32;
+            value-=32;
         }else {
             System.out.println("Not a Letter");
         }
-        char res = (char)newValue;
-        System.out.println(res);
+        System.out.println(value);
+//        char res = (char)newValue;
+//        System.out.println(res);
+        /*Use the Comment code for Better Understand*/
     }
 }
