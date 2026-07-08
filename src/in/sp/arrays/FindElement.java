@@ -21,7 +21,7 @@ public class FindElement {
         boolean res =false;
         System.out.println("Enter the array size :");
         int size = obj.nextInt();
-        int arrLength[] = new int[size];
+        int[] arrLength = new int[size];
         System.out.println("Enter the Target value :");
         int tar = obj.nextInt();
         for (int i = 0; i<arrLength.length;i++){
