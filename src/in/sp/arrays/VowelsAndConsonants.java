@@ -12,7 +12,7 @@ public class VowelsAndConsonants {
         int consonants = 0;
         for(int i = 0;i<name.length();i++){
             char ch = name.charAt(i);
-            if(ch >= 'a'&& ch <='z'){
+            if(Character.isLetter(ch)){
                 if (ch=='a' || ch=='e'|| ch=='i'|| ch=='o'||ch=='u'){
                     vowels++;
                 }else {
