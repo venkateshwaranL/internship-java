@@ -15,6 +15,7 @@ class Books{
 }
 public class Main {
     public static void main(String[] args) {
-
+        Books b = new Books("DSA",1,"Venkatesh",5);
+        System.out.println("BooK Name: "+b.name+", Author: "+b.author);
     }
 }
