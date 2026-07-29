@@ -16,13 +16,9 @@ public class FilesDemo {
         File fls = new File("E:\\Internship\\FilesDemo\\demo.txt");
         boolean existsFileName = fls.exists();
         System.out.println(existsFileName);
-        if (existsFileName == false){
-            try {
-                boolean newFileCreated = fls.createNewFile();
-                System.out.println("New File Created: "+newFileCreated);
-            }catch (IOException e){
-                e.printStackTrace();
-            }
+        boolean deleteFile = fls.delete();
+        if (deleteFile == true){
+            System.out.println("File Deleted: "+ deleteFile);
         }
     }
 }
