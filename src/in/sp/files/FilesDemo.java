@@ -27,7 +27,9 @@ public class FilesDemo {
 //            e.printStackTrace();
 //        }
         File fl = new File("E:\\Internship\\FilesDemo\\Language\\Java\\test.txt");
-        boolean renameFile = fls.renameTo(fl);
-        System.out.println(renameFile + " RenameFile");
+//        boolean renameFile = fls.renameTo(fl);
+//        System.out.println(renameFile + " RenameFile");
+        String name = fl.getName();
+        System.out.println(name);
     }
 }
