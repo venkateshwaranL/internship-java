@@ -26,10 +26,19 @@ public class FilesDemo {
 //        }catch (IOException e){
 //            e.printStackTrace();
 //        }
-        File fl = new File("E:\\Internship\\FilesDemo\\Language\\Java\\test.txt");
-//        boolean renameFile = fls.renameTo(fl);
-//        System.out.println(renameFile + " RenameFile");
-        String name = fl.getName();
-        System.out.println(name);
+//        File fl = new File("E:\\Internship\\FilesDemo\\Language\\Java\\test.txt");
+////        boolean renameFile = fls.renameTo(fl);
+////        System.out.println(renameFile + " RenameFile");
+//        String name = fl.getName();
+//        System.out.println(name);
+        File f = new File("E:\\Internship");
+//        String[] listOfFile = f.list();
+//        for (String ls : listOfFile){
+//            System.out.println(ls);
+//        }
+        File[] files = f.listFiles();
+        for(File ns : files){
+            System.out.println(ns);
+        }
     }
 }
