@@ -13,12 +13,21 @@ public class FilesDemo {
 //            exists = fl.exists();
 //            System.out.println(exists);
 //        }
-        File fls = new File("E:\\Internship\\FilesDemo\\demo.txt");
-        boolean existsFileName = fls.exists();
-        System.out.println(existsFileName);
-        boolean deleteFile = fls.delete();
-        if (deleteFile == true){
-            System.out.println("File Deleted: "+ deleteFile);
-        }
+//        File fls = new File("E:\\Internship\\FilesDemo\\demo.txt");
+//        boolean existsFileName = fls.exists();
+//        System.out.println(existsFileName);
+//        boolean deleteFile = fls.delete();
+//        if (deleteFile == true){
+//            System.out.println("File Deleted: "+ deleteFile);
+        File fls = new File("E:\\Internship\\FilesDemo\\Language\\Java\\Demo.txt");
+//        try {
+//            boolean newFile = fls.createNewFile();
+//            System.out.println(newFile+" is NewFile Created");
+//        }catch (IOException e){
+//            e.printStackTrace();
+//        }
+        File fl = new File("E:\\Internship\\FilesDemo\\Language\\Java\\test.txt");
+        boolean renameFile = fls.renameTo(fl);
+        System.out.println(renameFile + " RenameFile");
     }
 }
