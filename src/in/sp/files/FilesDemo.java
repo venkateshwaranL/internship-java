@@ -31,14 +31,16 @@ public class FilesDemo {
 ////        System.out.println(renameFile + " RenameFile");
 //        String name = fl.getName();
 //        System.out.println(name);
-        File f = new File("E:\\Internship\\FilesDemo\\Language\\Java");
+        File f = new File("E:\\Internship");
 //        String[] listOfFile = f.list();
 //        for (String ls : listOfFile){
 //            System.out.println(ls);
 //        }
         File[] files = f.listFiles();
         for(File ns : files){
-            System.out.println(ns);
+            if(f.isDirectory()) {
+                System.out.println(ns);
+            }
         }
     }
 }
