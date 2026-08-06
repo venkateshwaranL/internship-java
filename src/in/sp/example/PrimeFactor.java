@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PrimeFactor {
     public static LinkedList<Integer> allPrime(int num){
         LinkedList<Integer> ans = new LinkedList<>();
-        for(int i= 2;i*i <= num;i++){
+        for(int i= 2;i*i <= num;i=(i==2?i+1:i+2)){//using some idea in increment
             if(num%i==0){
                 ans.add(i);
                 while(num%i==0){
