@@ -1,33 +1,21 @@
 package in.sp.stringstack;
 
+import in.sp.dsa.ArraysTask;
+
 import java.util.Scanner;
 
 public class LinearSearch {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
-        System.out.println("Enter the Array Size:");
-        int[] arr = new int[obj.nextInt()];
-        System.out.println("Enter the Array Element:");
+        int size = obj.nextInt();
+        int[] arr = new int[size];
         for(int i=0;i<arr.length;i++){
             arr[i]=obj.nextInt();
         }
-        System.out.print("[");
-        for(int i=0;i< arr.length;i++){
-            System.out.print(arr[i]);
-            if(i!= arr.length-1){
-                System.out.print(",");
-            }
-        }
-        System.out.println("]");
-        System.out.println("Enter the Key value:");
         int key = obj.nextInt();
-        for(int i=0;i< arr.length;i++){
-            if (key==arr[i]){
-                System.out.println("Key value "+key+" Found at "+i+" Index");
-                System.exit(1);
-            }
-        }
-        System.out.println("Key Not Found");
+        ArraysTask ar = new ArraysTask();
+        int Search = ar.linerSearch(key, arr);
+        System.out.println(Search);
         obj.close();
     }
 }
