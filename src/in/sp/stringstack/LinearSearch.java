@@ -1,7 +1,5 @@
 package in.sp.stringstack;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class LinearSearch {
