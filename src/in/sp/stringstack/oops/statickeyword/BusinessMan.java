@@ -5,15 +5,18 @@ import java.util.Scanner;
 public class BusinessMan {
     int p;
     int t;
-    float r;
+    static float r;
     float si;
+
+    static {
+        r = 2.0f;
+    }
 
     public void acceptData() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the P & T");
         p = scan.nextInt();
         t = scan.nextInt();
-        r = 2.0f;
     }
 
     public void calculateSi() {
